@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  font-family: 'Oswald',sans-serif;
+  color: white;
+}
+
+.banner {
+  padding: 200px 0px;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner h1 {
+  color: white;
+}
+
+.banner p {
+  color: white;
+  font-size: 20px;
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+  text-align: right;
+}
+
+.btn-primary {
+  background-color: #DC4343;
+  color: white;
+  padding: 16px 36px;
+  border-radius: 50px;
+  display: inline-block;
+}
+.btn-primary:hover {
+  background-color: #c93232;
+}
