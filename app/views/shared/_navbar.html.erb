@@ -2,15 +2,15 @@
   <%= link_to "#", class: "navbar-brand" do %>
   <%= image_tag "tuf.png" %>
   <% end %>
-
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-toggle="collapse"
+    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+    aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto d-flex align-items-end navbar-nav ml-lg-auto">
       <li class="nav-item">
-        <%= link_to "Donate", "#", class: "nav-link" %>
+        <%= link_to "Donate", donate_path, class: "nav-link" %>
       </li>
       <li class="nav-item">
         <%= link_to "Volunteer", "#", class: "nav-link" %>
