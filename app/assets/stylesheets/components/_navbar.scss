@@ -8,5 +8,17 @@
 }
 
 .navbar-lewagon .navbar-brand img {
-  width: 250px;
+  width: 380px;
+}
+
+.nav-item {
+  border: 1px solid #DC4343;
+  color: #DC4343;
+  padding: 6px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 10px;
+  cursor: pointer;
+  border-radius: 31px;
 }
