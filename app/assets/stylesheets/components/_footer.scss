@@ -4,22 +4,28 @@ footer {
   background: white;
 }
 
+.final {
+  justify-content: space-between;
+  align-items: center;
+}
+
 .bottom-box {
-  width: 100%S;
+  width: 100%;
 }
 
 .bottom .final .social a{
   padding: 0 2px;
 }
 .bottom .final .social a span{
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
+  font-size: 1.4375rem;
   background: #DC4343;
-  line-height: 40px;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
   text-align: center;
-  font-size: 18px;
+  border-radius: 50%;
   transition: 0.3s;
+  cursor: pointer;
   color: white;
 }
 .bottom .final .social a span:hover{
@@ -28,7 +34,7 @@ footer {
 
 
 .logo-end {
-  width: 200px;
+  width: 150px;
   height: auto;
   justify-content: center;
   text-align: center;
@@ -36,8 +42,6 @@ footer {
 .final{
   position: relative;
   margin: 130px auto;
-  text-align: center;
-  padding: 0 20px;
   color: #DC4343;
   background-color: white;}
 
@@ -49,7 +53,7 @@ footer {
   margin: 0;
 }
 .content-two .box{
-  flex-basis: 50%;
+  flex-basis: 45%;
   padding: 10px 20px;
 }
 .box h3{
@@ -68,5 +72,5 @@ footer {
 }
 
 .bottom .final .social{
-  margin: 20px 0 0 0;
+  margin: 0;
 }
