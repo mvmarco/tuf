@@ -1,20 +1,52 @@
-.banner {
-  padding: 200px 0px;
+.jumbotron{
   background-size: cover;
   background-position: center;
+  height: 70vh;
+  font-weight: 700;
 }
 
-.banner h1 {
+.jumbotron h1{
+  margin-top: 2em;
+}
+
+
+
+.btn-banner{
+  background-color: #DC4343;
+  min-width: 150px;
+  color: white;
+  padding: 16px 36px;
+  border-radius: 50px;
+  margin-right: 3em;
+}
+
+a.btn-banner:hover{
+  text-decoration: none !important;
   color: white;
 }
 
-.banner p {
-  color: white;
-  font-size: 20px;
-}
+@media (max-width: 675px){
+  .jumbotron{
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .jumbotron h1{
+    color: #DC4343;
+    font-size: 25px;
+    margin-top: 345px;
+    font-weight: 700;
+    text-shadow: 1px 1px #d95959;
+  }
 
-.container {
-  width: 900px;
-  margin: 0 auto;
-  text-align: right;
+  .jumbotron p{
+    font-size: 16px;
+    text-align: start;
+    font-weight: 700;
+  }
+
+  .btn-banner{
+    min-width: 100px;
+    font-size: 16px;
+    margin-right: 10px;
+  }
 }
