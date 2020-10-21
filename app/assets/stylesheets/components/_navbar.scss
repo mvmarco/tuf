@@ -13,6 +13,7 @@
 
 .nav-item {
   border: 1px solid #DC4343;
+  min-width: 150px;
   color: #DC4343;
   padding: 6px 28px;
   text-align: center;
@@ -21,4 +22,23 @@
   margin: 4px 10px;
   cursor: pointer;
   border-radius: 31px;
+}
+@media (max-width: 675px){
+  .navbar-lewagon .navbar-brand img {
+    width: 200px;
+  }
+  .navbar-light .navbar-nav .nav-link{
+    text-align: center !important;
+    margin: 0 auto;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  .nav-item {
+    min-width: 20px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: .5em 0;
+  }
 }
