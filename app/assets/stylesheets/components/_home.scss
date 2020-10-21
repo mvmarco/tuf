@@ -255,6 +255,10 @@ body {
   background-color: white;
 }
 
+.left .content p{
+  text-align: justify;
+}
+
 section{
   bottom: 0px;
   width: 100%;
@@ -264,7 +268,8 @@ section{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin: 10px 80px;
+  margin: 0px 80px;
+  padding: 10px 0;
 }
 .main-content .box{
   flex-basis: 50%;

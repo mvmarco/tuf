@@ -1,7 +1,11 @@
 footer {
-  bottom: 0px;
+  margin: 0;
   width: 100%;
   background: white;
+}
+
+.bottom-box {
+  width: 100%S;
 }
 
 .bottom .final .social a{
@@ -42,7 +46,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin: 10px 80px;
+  margin: 0;
 }
 .content-two .box{
   flex-basis: 50%;
