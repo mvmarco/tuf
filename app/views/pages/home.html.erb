@@ -1,10 +1,16 @@
 <!-- Banner -->
 
-<div class="banner img-fluid" style="background-image:url(<%= image_url('banner.jpg') %>)">
-  <div class="container">
-    <h1><strong>Long-term support for lasting change</strong></h1>
-    <p>Creating better futures for those in need. Our work is focused on breaking the cycle of intergenerational poverty</p>
-    <%= link_to "Partner with us", "#", class: "btn-primary text-decoration-none" %>
+<div class="jumbotron jumbotron-fluid" style="background-image:url(<%= image_url('banner.jpg') %>); width: 100%">
+  <div class="container-fluid">
+    <div class="row justify-content-end">
+      <div class="col-lg-5 col-md-8 col-sm-12">
+        <h1 class="display-4">Long-term support for lasting change</h1>
+        <p class="lead">Treating better futures for those in need. Our work is focused on breaking the cycle of intergenerational poverty</p>
+        <div class="row justify-content-end" >
+          <%= link_to "Partner with us", "#", class: "text-decoration-none btn-banner" %>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
