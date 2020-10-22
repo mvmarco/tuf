@@ -1,22 +1,31 @@
 .jumbotron{
   background-size: cover;
   background-position: center;
-  height: 70vh;
-  font-weight: 700;
+
 }
 
 .jumbotron h1{
   margin-top: 2em;
+  font-size: 3.5rem;
+  font-weight: 700;
+  font-family: $headers-font;
 }
 
-
+.jumbotron p{
+  font-size: 1.250em;
+  font-weight: 400;
+  font-family: $body-font;
+}
 
 .btn-banner{
   background-color: #DC4343;
-  min-width: 150px;
+  min-width: 9.375em;
   color: white;
-  padding: 16px 36px;
-  border-radius: 50px;
+  font-family: $body-font;
+  font-weight: 400;
+  font-size: 1em;
+  padding: 1em 2.25em;
+  border-radius: 3.125em;
   margin-right: 3em;
 }
 
@@ -32,21 +41,22 @@ a.btn-banner:hover{
   }
   .jumbotron h1{
     color: #DC4343;
-    font-size: 25px;
-    margin-top: 345px;
+    font-size: 1.5em;
+    margin-top: 15em;
+    margin-bottom: 1em;
     font-weight: 700;
-    text-shadow: 1px 1px #d95959;
   }
 
   .jumbotron p{
-    font-size: 16px;
+    font-size: 1em;
     text-align: start;
     font-weight: 700;
   }
 
   .btn-banner{
-    min-width: 100px;
-    font-size: 16px;
-    margin-right: 10px;
+    min-width: 6.25em;
+    font-size: 1em;
+    margin-right: 0.625em;
+    margin-bottom: 0.825em;
   }
 }
