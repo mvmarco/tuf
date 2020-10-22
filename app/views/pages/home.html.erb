@@ -53,47 +53,53 @@
 </div>
 
 <!-- Projects -->
-
-  <div class="projects">
-  <h2 class="our-projects"><strong>Our projects</strong></h2>
-
-    <section class="project" data-aos="fade-left">
-      <%= image_tag "sc.png", class: "img" %>
-      <div class=text>
-        <h3><strong>Senior Care Project</strong></h3>
-        <p>With increasing economic pressures and shifting family roles, traditional ways of caring for the elderly have become difficult to maintain, leaving many senior citizens without a support network. Our Senior’s program provides weekly meals and social support to our aged. Volunteers also provide support for local staff, assisting with meal preparation, cleaning, or laundry. In the process, volunteers build relationships and gain unique insights into the lives of our senior citizens.</p>
-        <%= link_to "Learn more >>", "#", class: "btn-secondary text-decoration-none" %>
+<div class="container-fluid p-5 projects">
+  <div class="row">
+    <div class="col-12 text-center mb-5">
+      <h2>Our Projects</h2>
+    </div>
+    <div class="row mb-5">
+      <div data-aos="flip-right" class="col-lg-6 col-md-6 col-sm-12 pl-5 order-sm-1 order-2">
+        <h3 class="mb-3 mt-3">Senior Care Project</h3>
+        <p class="mb-5 text-justify">With increasing economic pressures and shifting family roles, traditional ways of caring for the elderly have become difficult to maintain, leaving many senior citizens without a support network. Our Senior’s program provides weekly meals and social support to our aged. Volunteers also provide support for local staff, assisting with meal preparation, cleaning, or laundry. In the process, volunteers build relationships and gain unique insights into the lives of our senior citizens</p>
+        <%= link_to "Learn more >>", "#", class: "mt-3 btn-projects text-decoration-none" %>
       </div>
-    </section>
-
-   <section class="project" data-aos="fade-right">
-      <%= image_tag "l4l.png", class: "img" %>
-      <div class=text>
-        <h3><strong>Learning 4 Life</strong></h3>
-        <p>is an Afterschool Project providing students the opportunity to continue their school day in a safe space with adult supervision. Education is the foundation of success, but many children in South Africa do not enjoy the full educational experience. Our Afterschool programs operate in Brackenfell, Hermon and Struisbaai where provide care for approximately 135 students.</p>
-        <%= link_to "Learn more >>", "#", class: "btn-secondary text-decoration-none" %>
+      <div class="col-lg-6 col-md-6 col-sm-12 mb-5 order-1 d-flex justify-content-center">
+        <%= image_tag "sc.png", class: "img" %>
       </div>
-    </section>
-
-    <section class="project" data-aos="fade-left">
-      <%= image_tag "ta.png", class: "img" %>
-      <div class=text>
-        <h3><strong>TUF Alumni</strong></h3>
-        <p>In 2018 we formed an Alumni group from our ex-L4L matriculants and established a board to lead the longer-term engagement in social action and to maintain a mentoring relationship with these students.</p>
-        <%= link_to "Learn more >>", "#", class: "btn-secondary text-decoration-none" %>
+    </div>
+    <div class="row mt-4 mb-5">
+      <div class="col-lg-6 col-md-6 col-sm-12 mb-5 order-1 d-flex justify-content-center">
+        <%= image_tag "l4l.png", class: "img" %>
       </div>
-    </section>
-
-    <section class="project" data-aos="fade-right">
-      <%= image_tag "lh.png", class: "img" %>
-      <div class=text>
-        <h3><strong>Senior Care Project</strong></h3>
-        <p>Our Senior’s program provides weekly meals and social support to our aged. Volunteers also provide support for local staff, assisting with meal preparation, cleaning, or laundry. In the process, volunteers build relationships and gain unique insights into the lives of our senior citizens.</p>
-        <%= link_to "Learn more >>", "#", class: "btn-secondary text-decoration-none" %>
+      <div data-aos="flip-left" class="col-lg-6 col-md-6 col-sm-12 pr-5 order-sm-1 order-2">
+        <h3 class="mb-3 mt-3">Learning 4 Life</h3>
+        <p class="mb-5 text-justify">is an Afterschool Project providing students the opportunity to continue their school day in a safe space with adult supervision. Education is the foundation of success, but many children in South Africa do not enjoy the full educational experience. Our Afterschool programs operate in Brackenfell, Hermon and Struisbaai where provide care for approximately 135 students.</p>
+        <%= link_to "Learn more >>", "#", class: "btn-projects text-decoration-none" %>
       </div>
-    </section>
+    </div>
+    <div class="row mt-4 mb-5">
+      <div data-aos="flip-right" class="col-lg-6 col-md-6 col-sm-12 pl-5 order-sm-1 order-2">
+        <h3 class="mb-3 mt-3">TUF Alumni</h3>
+        <p class="mb-5 text-justify">In 2018 we formed an Alumni group from our ex-L4L matriculants and established a board to lead the longer-term engagement in social action and to maintain a mentoring relationship with these students.</p>
+        <%= link_to "Learn more >>", "#", class: "btn-projects text-decoration-none" %>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 mb-5 order-1 d-flex justify-content-center">
+        <%= image_tag "ta.png", class: "img" %>
+      </div>
+    </div>
+    <div class="row mt-4 mb-5">
+      <div class="col-lg-6 col-md-6 col-sm-12 mb-5 order-1 d-flex justify-content-center">
+        <%= image_tag "lh.png", class: "img" %>
+      </div>
+      <div data-aos="flip-left" class="col-lg-6 col-md-6 col-sm-12 pr-5 order-sm-1 order-2">
+        <h3 class="mb-3 mt-3">Senior Care Project</h3>
+        <p class="mb-5 text-justify">Our Senior’s program provides weekly meals and social support to our aged. Volunteers also provide support for local staff, assisting with meal preparation, cleaning, or laundry. In the process, volunteers build relationships and gain unique insights into the lives of our senior citizens.</p>
+        <%= link_to "Learn more >>", "#", class: "btn-projects text-decoration-none" %>
+      </div>
+    </div>
+  </div>
 </div>
-
 <!-- Contact us form and map -->
 <div class="contact d-flex">
 

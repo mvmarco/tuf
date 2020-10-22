@@ -1,0 +1,39 @@
+.projects{
+  background-color: #DC4343;
+  color: white;
+}
+/******Typography********/
+.projects h2,
+.projects h3{
+  font-family: $headers-font;
+  font-weight: 700;
+}
+
+.projects p{
+  opacity: .5;
+  font-family: $body-font;
+}
+
+/****End Typography*****/
+
+
+.projects img{
+  width: auto;
+  height: 180px;
+}
+.btn-projects{
+  margin-top: 2em;
+  background-color: white;
+  min-width: 9.375em;
+  color: #DC4343;
+  font-family: $body-font;
+  font-weight: 400;
+  font-size: 1em;
+  padding: 1em 2.25em;
+  border-radius: 3.125em;
+}
+
+.btn-projects:hover,
+.btn-projects:focus{
+  color: #DC4343;
+}
