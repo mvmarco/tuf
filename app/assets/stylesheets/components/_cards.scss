@@ -1,0 +1,17 @@
+.card {
+  border: 1px solid rgb(230, 230, 230);
+  border-radius: 0.3125em;
+  box-shadow: 0 0 0.3125em rgb(230, 230, 230);
+  background-color: #DC4343;
+}
+
+.card h3{
+  font-family: $headers-font;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.card p {
+  font-family: $body-font;
+  font-weight: 400;
+  opacity: .5;
+}

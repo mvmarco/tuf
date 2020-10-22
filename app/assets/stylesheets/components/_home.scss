@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  font-family: 'Oswald', sans-serif;
   color: white;
 }
 
@@ -18,29 +17,7 @@ body {
   background-color: #c93232;
 }
 
-.cards {
-  color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 30px 0;
-  padding: 2rem;
-}
 
-.card {
-  border: 1px solid (230, 230, 230);
-  width: 225px;
-  height: 225px;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgb(230, 230, 230);
-  text-align: center;
-  background-color: #DC4343;
-}
-
-.card p {
-  opacity: .5;
-}
 
 .projects {
   background-color: #DC4343;
