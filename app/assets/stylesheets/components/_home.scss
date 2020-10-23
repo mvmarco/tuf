@@ -138,16 +138,46 @@ section {
   padding: 10px 20px;
 }
 
-.box h3 {
+.box h2 {
   text-transform: uppercase;
   color: #DC4343;
+  font-weight: 600;
   font-weight: bold;
   text-align: center;
 }
 
 .box .content {
   margin: 20px 0 0 0;
-  position: relative;
+}
+
+.left .content .social {
+  margin: 20px 0 0 0;
+}
+
+.left .content .social a {
+  padding: 0 2px;
+
+}
+
+.left .content .social a span {
+  font-size: 18px;
+  background: #DC4343;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+  color: white;  
+}
+
+.left .content p {
+  text-align: justify;
+}
+
+.bottom .content .social a span:hover{
+  background: #c93232;
 }
 
 .center .content {
@@ -182,15 +212,7 @@ section {
   margin: 15px 0;
 }
 
-.bottom center {
-  padding: 5px;
-  font-size: 0.9375rem;
-  background: #151515;
-}
 
-.bottom center span {
-  color: #656565;
-}
 
 .bottom center a {
   color: #f12020;
@@ -220,3 +242,4 @@ section {
   text-align: center;
   color: #DC4343;
 }
+
