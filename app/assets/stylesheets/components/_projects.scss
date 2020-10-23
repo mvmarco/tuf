@@ -1,12 +1,16 @@
 .projects{
   background-color: #DC4343;
   color: white;
+  overflow: hidden;
 }
 /******Typography********/
 .projects h2,
 .projects h3{
   font-family: $headers-font;
-  font-weight: 700;
+  font-weight: 600;
+}
+.projects h2{
+  text-transform: uppercase;
 }
 
 .projects p{
@@ -19,7 +23,7 @@
 
 .projects img{
   width: auto;
-  height: 180px;
+  height: 250px;
 }
 .btn-projects{
   margin-top: 2em;
@@ -36,4 +40,38 @@
 .btn-projects:hover,
 .btn-projects:focus{
   color: #DC4343;
+}
+
+
+@media (max-width: 675px) {
+  .projects h3{
+    margin-top: 1.5em !important;
+  }
+  .projects p{
+    margin-bottom: 3em !important;
+  }
+}
+
+
+@media (min-width: 675px) {
+  .projects-left-text,
+  .btn-left,
+  .project-img-right{
+    margin-left: 4em;
+  }
+
+  .projects-title-left{
+    margin-left: 2.4em !important;
+  }
+
+  .projects-left-text,
+  .project-text-right{
+    margin-bottom: 2em;
+  }
+  .project-img-left{
+    margin-left: 18.5em;
+  }
+  .project-text-right{
+    margin-right: 4.5em !important;
+  }
 }
