@@ -57,19 +57,20 @@
   .projects-left-text,
   .btn-left,
   .project-img-right{
-    margin-left: 4em;
+    margin-left: 3em;
   }
 
   .projects-title-left{
-    margin-left: 2.4em !important;
+    margin-left: 1.8em !important;
   }
 
   .projects-left-text,
   .project-text-right{
     margin-bottom: 2em;
   }
-  .project-img-left{
-    margin-left: 18.5em;
+  img.project-img-left{
+    float: right;
+    margin-right: 3em;
   }
   .project-text-right{
     margin-right: 4.5em !important;
