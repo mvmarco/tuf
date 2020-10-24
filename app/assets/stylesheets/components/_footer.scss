@@ -1,87 +1,40 @@
-footer {
-  margin: 0;
-  width: 100%;
-  background: #DC4343;
+.footer-tuf{
+  background-color: #DC4343;
 }
 
-.final {
-  justify-content: space-between;
-  align-items: center;
-}
-
-.bottom-square {
-  width: 100%;
-}
-
-.bottom .final .social a{
-  padding: 0 2px;
-}
-.bottom .final .social a span{
-  font-size: 1.4375rem;
-  background: white;
-  height: 45px;
-  width: 45px;
-  line-height: 45px;
-  text-align: center;
-  border-radius: 50%;
-  transition: 0.3s;
-  cursor: pointer;
-  color: #DC4343;
-}
-.bottom .final .social a span:hover{
-  background: #f4f4f4;
-}
-
-
-.logo-end {
-  width: 170px;
-  height: auto;
-  justify-content: center;
-  text-align: center;
-  border-radius: 50%;
-}
-.final{
-  position: relative;
-  margin: 130px auto;
-  color: #DC4343;
-  background-color: white;
-  justify-content: space-evenly;
-  text-align: center;
-}
-
-
-.content-two{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin: 0;
-}
-.content-two .square{
-  flex-basis: 45%;
-  padding: 10px 20px;
-}
-.square h2{
+.footer-tuf h2{
+  font-family: $headers-font;
+  font-weight: 700;
   text-transform: uppercase;
+}
+
+.footer-tuf a{
+  color: white;
+  text-decoration: none;
+}
+
+.image-footer{
+  border-radius: 50%;
+  width: 170px;
+  height: 170px;
+}
+
+.fa-facebook,
+.fa-instagram-square,
+.fa-twitter,
+.fa-youtube{
+  font-size: 1.5em;
+  background-color:white;
   color: #DC4343;
-  font-weight: bold;
-  text-align: center;
-  color: white;
-}
-.square .final{
-  margin: 20px 0 0 0;
-  position: relative;
-  background: #DC4343;
+  border-radius: 50%;
 }
 
-.bottom .final p{
-  text-align: center;
+.fa-facebook:hover,
+.fa-instagram-square:hover,
+.fa-twitter:hover,
+.fa-youtube:hover{
+  background-color:white;
+  color: #c93232;
+  cursor: pointer;
 }
 
-.bottom .final .social{
-  margin: 0;
-}
-
-.copyright p {
-  margin: 0;
-  color: white;
-}
