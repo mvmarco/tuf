@@ -1,21 +1,23 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <%= link_to "#", class: "navbar-brand img-fluid" do %>
+  <%= link_to root_path, class: "navbar-brand img-fluid" do %>
   <%= image_tag "tuf.png" %>
   <% end %>
+
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
     aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
+
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto navbar-nav ml-lg-auto">
       <li class="nav-item">
         <%= link_to "Donate", donate_path, class: "nav-link" %>
       </li>
       <li class="nav-item">
-        <%= link_to "Volunteer", "#", class: "nav-link" %>
+        <%= link_to "Volunteer", "#linkone", class: "nav-link" %>
       </li>
       <li class="nav-item" href="contact-link">
-        <%= link_to "Contact us", "#", class: "nav-link" %>
+        <%= link_to "Contact us", "#linkone", class: "nav-link" %>
       </li>
     </ul>
   </div>
