@@ -1,0 +1,24 @@
+.our-vision{
+  color: #DC4343;
+  background-color: white;
+}
+
+.our-vision h2{
+  font-weight: 700;
+  font-family: $headers-font;
+  text-transform: uppercase;
+}
+.our-vision p{
+  line-height: 1.5em;
+  font-size: 1.2rem;
+  font-family: $body-font;
+}
+.fa-envelope,
+.fa-map-marked-alt,
+.fa-phone-alt{
+  font-size: 1.2em;
+  background-color: #DC4343;
+  color: white;
+  border-radius: 50%;
+
+}
