@@ -38,3 +38,17 @@
   cursor: pointer;
 }
 
+@media (max-width: 675px){
+  .image-footer{
+    margin-left: 1em;
+    width: 90px;
+    height: 90px;
+  }
+  .fa-facebook,
+  .fa-instagram-square,
+  .fa-twitter,
+  .fa-youtube{
+    font-size: 1.2em;
+    margin-top: 0.5em !important;
+  }
+}
