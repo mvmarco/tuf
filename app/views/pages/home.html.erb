@@ -1,13 +1,13 @@
 <!-- Banner -->
 
-<div class="jumbotron jumbotron-fluid" style="background-image:url(<%= image_url('banner.jpg') %>); width: 100%">
+<div class="jumbotron jumbotron-fluid">
   <div class="container-fluid">
-    <div class="row justify-content-end">
-      <div class="col-lg-5 col-md-8 col-sm-12">
+    <div class="row justify-content-end content-banner">
+      <div class="col-lg-5 col-md-8 col-sm-6">
         <h1 class="display-4">Long-term support for lasting change</h1>
         <p class="lead">Treating better futures for those in need. Our work is focused on breaking the cycle of intergenerational poverty</p>
         <div class="row justify-content-end" >
-          <%= link_to "Partner with us", "#linkone", class: "text-decoration-none btn-banner" %>
+            <%= link_to "Partner with us", "#linkone", class: "text-decoration-none btn-banner" %>
         </div>
       </div>
     </div>
@@ -15,7 +15,7 @@
 </div>
 
 <!-- About -->
-<div class="container-fluid p-5 mb-5">
+<div class="container-fluid p-5 mb-5 card-small">
   <div class="row pl-5 pr-5">
     <div class="col-12 col-lg-3 col-md-6 about">
       <div class="card mb-4 p-2 h-100">
@@ -72,6 +72,7 @@
       <%= image_tag "sc.png", class: "img project-img-left" %>
     </div>
   </div>
+  <hr>
   <div class="row pb-5 mb-5">
     <div class="col-lg-5 col-md-6 col-sm-12 order-1" data-aos="slide-left" data-aos-duration="1200">
       <%= image_tag "l4l.png", class: "img project-img-right" %>
@@ -80,9 +81,9 @@
       <h3 class="projects-title-right">Learning 4 Life</h3>
       <p class="text-justify project-text-right">is an Afterschool Project providing students the opportunity to continue their school day in a safe space with adult supervision. Education is the foundation of success, but many children in South Africa do not enjoy the full educational experience. Our Afterschool programs operate in Brackenfell, Hermon and Struisbaai where provide care for approximately 135 students.</p>
       <%= link_to "Learn more >>", "/documents/book.pdf", target: "_blank" , class: "btn-projects btn-left text-decoration-none" %>
-     
     </div>
   </div>
+  <hr>
   <div class="row pb-5 mb-5">
     <div class="col-lg-7 col-md-6 col-sm-12 order-sm-1 order-2" data-aos="slide-right" data-aos-duration="1200">
       <h3 class="projects-title-left">TUF Alumni</h3>
@@ -93,6 +94,7 @@
       <%= image_tag "ta.png", class: "img project-img-left" %>
     </div>
   </div>
+  <hr>
   <div class="row pb-5 mb-5">
     <div class="col-lg-5 col-md-6 col-sm-12 order-1" data-aos="slide-left" data-aos-duration="1200">
       <%= image_tag "lh.png", class: "img project-img-right" %>
@@ -124,7 +126,8 @@
           <textarea class="form-control form-input-contact" id="user-message" rows="5"></textarea>
         </div>
         <div class="d-flex justify-content-center">
-          <%= link_to "Submit", "#", class: "text-decoration-none btn-contact-form d-flex justify-content-center" %>
+        <button type="submit" class="text-decoration-none btn-contact-form d-flex justify-content-center">Submit</button>
+        <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
         </div>
       </form>
 

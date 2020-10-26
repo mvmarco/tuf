@@ -1,4 +1,4 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+<div class="navbar navbar-expand-lg navbar-light navbar-tuf">
   <%= link_to root_path, class: "navbar-brand img-fluid" do %>
   <%= image_tag "tuf.png" %>
   <% end %>
@@ -9,18 +9,19 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto navbar-nav ml-lg-auto">
-      <li class="nav-item">
+      <li class="nav-item no-decoration">
         <form action="https://www.paypal.com/donate" method="post"
           target="_top">
           <input type="hidden" name="hosted_button_id" value="S428H9T5S2PXS" />
           <button type="submit" id="paypal-link", class="nav-link"> Donate </button>
         </form>
+
       </li>
-      <li class="nav-item">
+      <li class="nav-item no-decoration">
         <%= link_to "Volunteer", "#linkone", class: "nav-link" %>
       </li>
       <li class="nav-item" href="contact-link">
-        <%= link_to "Contact us", "#linkone", class: "nav-link" %>
+        <%= link_to "Contact us", "#linkone", class: "nav-link contact-nav" %>
       </li>
     </ul>
   </div>
