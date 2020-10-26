@@ -27,3 +27,11 @@
     font-size: 1em;
   }
 }
+
+@media (max-width: 415px) {
+  .card-small{
+    margin-top: 2rem !important;
+    padding: 1rem !important;
+    margin-top: 2rem !important;
+  }
+}

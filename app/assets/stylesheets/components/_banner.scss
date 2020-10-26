@@ -1,7 +1,7 @@
-.jumbotron{
+.jumbotron {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("new_banner.jpg");
   background-size: cover;
   background-position: center;
-
 }
 
 .jumbotron h1{
@@ -23,7 +23,7 @@
   color: white;
   font-family: $body-font;
   font-weight: 400;
-  font-size: 1em;
+  font-size: 1.1em;
   padding: 1em 2.25em;
   border-radius: 3.125em;
   margin-right: 3em;
@@ -35,29 +35,57 @@ a.btn-banner:hover{
   color: white;
 }
 
-@media (max-width: 675px){
+
+@media (max-width: 575.98px){
   .jumbotron{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("new_banner_small.jpg");
     margin: 0 !important;
     padding: 0 !important;
+    background-position:left;
+    height: 80vh;
+  }
+  .content-banner {
+    float: right;
+    align-items: flex-end;
+    margin-top: 17em;
   }
   .jumbotron h1{
-    color: #DC4343;
-    font-size: 1.5em;
-    margin-top: 15em;
-    margin-bottom: 1em;
+    margin-left: 5em;
+    color: white;
+    display: flex;
+    alignment-baseline: bottom;
+    font-size: 1.7em;
     font-weight: 700;
   }
 
   .jumbotron p{
+    margin-left: 8.5em;
     font-size: 1em;
     text-align: start;
-    font-weight: 700;
+    font-weight: 600;
   }
 
   .btn-banner{
-    min-width: 6.25em;
+    min-width: 4.25em;
     font-size: 1em;
+    margin-left: 11em;
     margin-right: 0.625em;
     margin-bottom: 0.825em;
+  }
+}
+
+@media (max-width: 400px) {
+  .jumbotron h1{
+    margin-left: .5em;
+  }
+  .jumbotron p {
+    margin-left: .5em;
+  }
+  .content-banner{
+    margin-top: 13em;
+  }
+
+  .btn-banner{
+    margin-left: 4em;
   }
 }
