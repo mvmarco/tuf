@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
   root to: 'pages#home'
-  get 'new', to: 'pages#new'
-  get 'create', to: 'pages#create'
+  post "send_contact", to: "pages#send_contact"
   get "/donate", to: "pages#donate"
 
  

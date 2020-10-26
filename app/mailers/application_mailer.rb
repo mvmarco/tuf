@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'from@example.com'
+  default from: 'tuf.umtshayelo.foundation@gmail.com' # this should be google
   layout 'mailer'
 end
