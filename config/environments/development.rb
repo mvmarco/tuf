@@ -4,11 +4,11 @@ Rails.application.configure do
   config.action_mailer.raise_delivery_errors = true
 
   config.action_mailer.smtp_settings = {
-    :address        => 'smtp.gmail.com',
+    :address        => ENV["EMAIL_SMTP"],
     :domain         => 'tuf.org',
-    :port           => 587,
-    :user_name      => 'senders_email_address',
-    :password       => 'senders_password',
+    :port           => ENV[EMAIL_PORT].to_i,
+    :user_name      => ENV["SENDERS_EMAIL_ADRESS"],
+    :password       => ENV["SENDERS_PASSWORD"],
     :authentication => :plain,
     :enable_starttls_auto => true
   }
