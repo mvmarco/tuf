@@ -14,7 +14,7 @@
 .nav-item {
   color: #DC4343;
   font-size: 1.3em;
-  text-align: center;
+  text-align: right;
   text-decoration: none;
   display: inline-block;
   margin: 4px 10px;
@@ -30,21 +30,34 @@
   padding: 0.5em 1.5em !important;
 }
 
-@media (max-width: 675px){
+@media (max-width: 768px){
+  .navbar-tuf {
+    padding-right: 1em !important;
+  }
   .navbar-tuf .navbar-brand img {
     width: 200px;
   }
-  .navbar-light .navbar-nav .nav-link{
-    text-align: right !important;
-  }
-  nav ul {
-    flex-direction: column;
-  }
-  .nav-item {
-    min-width: 20px;
-    display: flex;
-    text-align: center;
-    align-items: center;
+
+   .nav li.nav-item {
     margin: .5em 0;
+  }
+  .no-decoration{
+    margin-left: 2em !important;
+    margin-right: 2em !important;
+  }
+  .contact-nav{
+    max-width: fit-content;
+    display: inline-flex;
+  }
+}
+
+@media (max-width: 411px) {
+  .nav-item {
+    font-size: 1.1em;
+  }
+
+  .no-decoration{
+    align-items: initial;
+    margin-right: 2em !important;
   }
 }
