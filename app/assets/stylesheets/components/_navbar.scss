@@ -23,17 +23,21 @@
   cursor: pointer;
   border-radius: 31px;
 }
-@media (max-width: 675px){
+
+@media (max-width: 675px) {
   .navbar-lewagon .navbar-brand img {
     width: 200px;
   }
-  .navbar-light .navbar-nav .nav-link{
+
+  .navbar-light .navbar-nav .nav-link {
     text-align: center !important;
     margin: 0 auto;
   }
+
   nav ul {
     flex-direction: column;
   }
+
   .nav-item {
     min-width: 20px;
     display: flex;
@@ -41,4 +45,14 @@
     align-items: center;
     margin: .5em 0;
   }
+}
+
+#paypal-link {
+  background: none;
+  border:none;
+  width: 100%;
+}
+
+#paypal-link:focus {
+      outline: none;
 }
