@@ -23,7 +23,7 @@
   color: white;
   font-family: $body-font;
   font-weight: 400;
-  font-size: 1em;
+  font-size: 1.1em;
   padding: 1em 2.25em;
   border-radius: 3.125em;
   margin-right: 3em;
@@ -35,7 +35,8 @@ a.btn-banner:hover{
   color: white;
 }
 
-@media (max-width: 675px){
+
+@media (max-width: 575.98px){
   .jumbotron{
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("new_banner_small.jpg");
     margin: 0 !important;
@@ -70,5 +71,21 @@ a.btn-banner:hover{
     margin-left: 11em;
     margin-right: 0.625em;
     margin-bottom: 0.825em;
+  }
+}
+
+@media (max-width: 400px) {
+  .jumbotron h1{
+    margin-left: .5em;
+  }
+  .jumbotron p {
+    margin-left: .5em;
+  }
+  .content-banner{
+    margin-top: 13em;
+  }
+
+  .btn-banner{
+    margin-left: 4em;
   }
 }

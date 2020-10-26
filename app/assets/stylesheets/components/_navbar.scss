@@ -1,21 +1,19 @@
-.navbar-lewagon {
+.navbar-tuf {
   justify-content: space-between;
   background: white;
 }
 
-.navbar-lewagon .navbar-collapse {
+.navbar-tuf .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
+.navbar-tuf .navbar-brand img {
   width: 380px;
 }
 
 .nav-item {
-  border: 1px solid #DC4343;
-  min-width: 150px;
   color: #DC4343;
-  padding: 6px 28px;
+  font-size: 1.3em;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -23,13 +21,21 @@
   cursor: pointer;
   border-radius: 31px;
 }
+
+.contact-nav{
+  background-color: #DC4343;
+  border-radius: 3.125em;
+  min-width: 6.375em;
+  color: white !important;
+  padding: 0.5em 1.5em !important;
+}
+
 @media (max-width: 675px){
-  .navbar-lewagon .navbar-brand img {
+  .navbar-tuf .navbar-brand img {
     width: 200px;
   }
   .navbar-light .navbar-nav .nav-link{
-    text-align: center !important;
-    margin: 0 auto;
+    text-align: right !important;
   }
   nav ul {
     flex-direction: column;
