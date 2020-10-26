@@ -22,6 +22,7 @@
   border-radius: 31px;
 }
 
+
 .contact-nav{
   background-color: #DC4343;
   border-radius: 3.125em;
@@ -60,4 +61,14 @@
     align-items: initial;
     margin-right: 2em !important;
   }
+}
+
+#paypal-link {
+  background: none;
+  border:none;
+  width: 100%;
+}
+
+#paypal-link:focus {
+      outline: none;
 }
