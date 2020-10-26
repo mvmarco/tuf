@@ -1,6 +1,8 @@
 class PagesController < ApplicationController
   skip_before_action :authenticate_user!, only: [ :home, :donate, :send_contact]
-  skip_before_action :verify_authenticity_token [:home, :donate, :send_contact]
+=begin
+  skip_before_action :verify_authenticity_token: [:home, :donate, :send_contact]
+=end
 
   def send_contact
     if ContactMailer.contact(params[:message]).deliver
