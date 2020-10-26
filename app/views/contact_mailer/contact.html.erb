@@ -4,7 +4,13 @@
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
   </head>
   <body>
-    <p>test</p>
-    <%= @message %>
+    <h2>Dear Charity,</h2>
+    <p>A new message was submitted through the online form by <strong><%= @full_name %></strong>.</p>
+    <p>User's phone is <%= @phone %> and email is <%= @email %>.</p>
+    <p>Message:</p>
+    <pre><%= @message %></pre>
+    <br/>
+    <p>Thank you,</p>
+    <p>Your Online Website.</p>
   </body>
 </html>
