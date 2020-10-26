@@ -1,13 +1,13 @@
-.contact-title{
+.contact-title {
   color: #DC4343;
   font-family: $headers-font;
 }
 
-.form-input-contact{
+.form-input-contact {
   border-radius: 0.3125em;
 }
 
-.btn-contact-form{
+.btn-contact-form {
   background-color: #DC4343;
   min-width: 9.375em;
   color: white;
@@ -17,17 +17,17 @@
   padding: 1em 2.25em;
   border-radius: 3.125em;
   margin-right: 3em;
+  border: none;
 }
 
 .btn-contact-form:hover,
-.btn-contact-form:focus{
+.btn-contact-form:focus {
   background: #c93232;
   color: white;
 }
 
-@media (max-width: 675px){
-  .contact-map{
+@media (max-width: 675px) {
+  .contact-map {
     margin-top: 2em;
   }
 }
-

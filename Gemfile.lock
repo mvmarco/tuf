@@ -238,6 +238,7 @@ DEPENDENCIES
   byebug
   capybara (>= 2.15)
   devise
+  dotenv
   dotenv-rails
   font-awesome-sass
   jbuilder (~> 2.7)
