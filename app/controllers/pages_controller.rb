@@ -2,16 +2,16 @@ class PagesController < ApplicationController
   skip_before_action :authenticate_user!, only: [ :home, :donate, :send_contact]
 
   def send_contact
-    good_params = validate_params;
+    good_params = validate_params
     if !good_params
-      flash[:error] = "You must fill in the form fields."
+      flash[:notice] = "You must fill in the form fields."
       return redirect_to root_path
     end
 
     if ContactMailer.contact(params[:full_name], params[:phone], params[:email], params[:message]).deliver
-      flash[:success] = "Message sent."
+      flash[:notice] = "Your message was successfully deliver to The Umtshayelo Foundation."
     else
-      flash[:error] = 'Cannot send message, please call us.'
+      flash[:notice] = 'Cannot send message, please call us.'
     end
 
     redirect_to root_path
