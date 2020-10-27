@@ -1,10 +1,26 @@
 Rails.application.configure do
- config.action_mailer.default_url_options = { host: "http://localhost:3000" }
- config.action_mailer.smtp_settings = { :address => '127.0.0.1', :port => 1025 }
- config.action_mailer.delivery_method = :smtp
- config.action_mailer.raise_delivery_errors = false
+ config.action_mailer.default_url_options = {
+     host: "http://localhost:3000",
+ }
 
-  # Settings specified here will take precedence over those in config/application.rb.
+ config.action_mailer.default_options = {
+     to: ENV["CONTACT_FORM_RECIPIENT"],
+     subject: "[DEVELOPMENT] Hey you got a new message from your new website!",
+     from: ENV["SMTP_USERNAME"]
+ }
+
+ config.action_mailer.delivery_method = :smtp
+ config.action_mailer.raise_delivery_errors = true
+ config.action_mailer.smtp_settings = {
+     :address              => ENV["SMTP_HOST"],
+     :port                 => ENV["SMTP_PORT"].to_i,
+     :user_name            => ENV["SMTP_USERNAME"],
+     :password             => ENV["SMTP_PASSWORD"],
+     :authentication       => "plain",
+     :enable_starttls_auto => ENV["SMTP_TLS"] == "true"
+ }
+
+ # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
@@ -35,11 +51,6 @@ Rails.application.configure do
 
   # Store uploaded files on the local file system (see config/storage.yml for options).
   config.active_storage.service = :local
-
-  # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = false
-
-  config.action_mailer.perform_caching = false
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log

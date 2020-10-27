@@ -112,24 +112,7 @@
   <div class="row">
     <div class="col-lg-6 col-md-6 col-sm-12">
       <h2 class="contact-title text-center" id="linkone">Are you interested in our foundation? <strong>Contact us</strong></h2>
-      <form action="/send_contact" method="post">  
-        <div class="form-group">
-          <input type="text" class="form-control form-input-contact" id="username" aria-describedby="emailHelp" placeholder="Name">
-        </div>
-        <div class="form-group">
-          <input type="text" class="form-control form-input-contact" id="user-email" placeholder="Email">
-        </div>
-        <div class="form-group">
-          <input type="text" class="form-control form-input-contact" id="user-phone" placeholder="Phone">
-        </div>
-        <div class="form-group">
-          <textarea class="form-control form-input-contact" id="user-message" rows="5"></textarea>
-        </div>
-        <div class="d-flex justify-content-center">
-        <button type="submit" class="text-decoration-none btn-contact-form d-flex justify-content-center">Submit</button>
-        <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
-        </div>
-      </form>
+      <%= render "shared/contact_form" %>
 
     </div>
     <div class="col-lg-6 col-md-6 col-sm-12 contact-map">

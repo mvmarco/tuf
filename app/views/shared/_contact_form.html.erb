@@ -1,0 +1,18 @@
+<form action="/send_contact" method="post">
+  <div class="form-group">
+    <input type="text" maxlength="100" minlength="2" required class="form-control form-input-contact" name="full_name" id="username" aria-describedby="emailHelp" placeholder="Name">
+  </div>
+  <div class="form-group">
+    <input type="email" required class="form-control form-input-contact" name="email" id="user-email" placeholder="Email">
+  </div>
+  <div class="form-group">
+    <input type="tel" required class="form-control form-input-contact" name="phone" id="user-phone" placeholder="Phone">
+  </div>
+  <div class="form-group">
+    <textarea minlength="10" maxlength="4000" required class="form-control form-input-contact" name="message" id="user-message" rows="5"></textarea>
+  </div>
+  <div class="d-flex justify-content-center">
+    <button type="submit" class="text-decoration-none btn-contact-form d-flex justify-content-center">Submit</button>
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  </div>
+</form>
