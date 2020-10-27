@@ -18,7 +18,6 @@ class PagesController < ApplicationController
   end
 
   def home
-    puts ENV["SMTP_PASSWORD"]
   end
   
   def donate
