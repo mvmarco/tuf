@@ -17,12 +17,18 @@
   padding: 1em 2.25em;
   border-radius: 3.125em;
   margin-right: 3em;
+  border: 2px solid #DC4343;
+
 }
 
 .btn-contact-form:hover,
-.btn-contact-form:focus{
+.btn-contact-form:focus,
+.btn-contact-form:active{
   background: #c93232;
   color: white;
+  border: 2px solid;
+  outline: none !important;
+  box-shadow: none;
 }
 
 @media (max-width: 675px){
