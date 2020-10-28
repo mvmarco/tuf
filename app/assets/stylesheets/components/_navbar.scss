@@ -10,9 +10,10 @@
 .navbar-tuf .navbar-brand img {
   width: 380px;
 }
-
+#paypal-link,
 .nav-item {
   font-size: 1.3em;
+  font-family: $body-font;
   text-align: right;
   text-decoration: none;
   display: inline-block;
@@ -21,13 +22,24 @@
   border-radius: 31px;
 }
 
+.nav-item .no-decoration{
+  font-family: $body-font;
+  font-size: 1.3em;
+  padding: 0 !important;
+}
+
+.btn-nav{
+  margin: 0 !important;
+}
+
 
 .contact-nav{
+  font-family: $body-font;
   background-color: #DC4343;
   border-radius: 3.125em;
   min-width: 6.375em;
   color: white !important;
-  padding: 0.5em 1.5em !important;
+  padding: 0.4em 1.5em !important;
 }
 
 @media (max-width: 768px){
@@ -41,12 +53,14 @@
  .nav li.nav-item {
     margin: .5em 0;
   }
-
-  #paypal-link,
-  .no-decoration{
-    margin-left: 2em !important;
-    margin-right: 2em !important;
+  #paypal-link{
+    margin-right: 1.7em !important;
   }
+
+  .no-decoration{
+    margin-right: 0.8em !important;
+  }
+
   .contact-nav{
     max-width: fit-content;
     display: inline-flex;
@@ -66,9 +80,15 @@
 }
 
 #paypal-link {
-  background: none;
-  border:none;
-  width: 100%;
+  font-size: 1.3em;
+  text-align: right;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 10px;
+  cursor: pointer;
+  color:  rgba(0, 0, 0, 0.5) !important;
+  border: none !important;
+  background-color: transparent !important;
 }
 
 #paypal-link:focus {
