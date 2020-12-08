@@ -7,17 +7,14 @@
   flex-grow: 0;
 }
 
-.navbar-nav {
-  align-items: flex-end;
-
-  button,
-  a {
-    width: 100%;
-  }
-}
-
 .navbar-tuf .navbar-brand img {
   width: 380px;
+}
+
+.navbar-nav {
+  li {
+    margin: auto 10px;
+  }
 }
 
 #paypal-link,
@@ -50,6 +47,18 @@
   min-width: 6.375em;
   color: white !important;
   padding: 0.4em 1.5em !important;
+}
+
+
+@media (max-width: $breakpoint-burger-menu) {
+  .navbar-nav {
+    align-items: flex-end;
+
+    button,
+    a {
+      width: 100%;
+    }
+  }
 }
 
 @media (max-width: 768px) {
