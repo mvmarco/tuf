@@ -7,6 +7,17 @@
   flex-grow: 0;
 }
 
+.navbar-nav {
+  align-items: flex-end;
+
+  // .nav-item {
+  //   width: 100%;
+  // }
+  button, a {
+    width: 100%;
+  }
+}
+
 .navbar-tuf .navbar-brand img {
   width: 380px;
 }
@@ -49,6 +60,17 @@
   .navbar-tuf .navbar-brand img {
     width: 200px;
   }
+
+  .navbar-nav {
+    .nav-item {
+      width: 60%;
+
+      .nav-link {
+        text-align: right;
+      }
+    }
+  }
+
   #paypal-link,
   .nav li.nav-item {
     margin: 0.5em 0;
@@ -71,6 +93,7 @@
   #paypal-link,
   .nav-item {
     font-size: 1.1em;
+    margin-right: 0;
   }
   #paypal-link,
   .no-decoration {
