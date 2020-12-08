@@ -10,10 +10,8 @@
 .navbar-nav {
   align-items: flex-end;
 
-  // .nav-item {
-  //   width: 100%;
-  // }
-  button, a {
+  button,
+  a {
     width: 100%;
   }
 }
@@ -21,6 +19,7 @@
 .navbar-tuf .navbar-brand img {
   width: 380px;
 }
+
 #paypal-link,
 .nav-item {
   font-size: 1.3em;
@@ -75,6 +74,7 @@
   .nav li.nav-item {
     margin: 0.5em 0;
   }
+
   #paypal-link {
     margin-right: 1.7em !important;
   }
@@ -95,6 +95,7 @@
     font-size: 1.1em;
     margin-right: 0;
   }
+
   #paypal-link,
   .no-decoration {
     align-items: initial;
