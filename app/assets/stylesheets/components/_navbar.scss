@@ -13,12 +13,9 @@
 #paypal-link,
 .nav-item {
   font-size: 1.3em;
-<<<<<<< HEAD
   text-align: left;
-=======
   font-family: $body-font;
   text-align: right;
->>>>>>> d4a5713a6252970d400e6b92a6d035b68a30df51
   text-decoration: none;
   display: inline-block;
   margin: 4px 10px;
@@ -26,27 +23,26 @@
   border-radius: 31px;
 }
 
-.nav-item .no-decoration{
+.nav-item .no-decoration {
   font-family: $body-font;
   font-size: 1.3em;
   padding: 0 !important;
 }
 
-.btn-nav{
+.btn-nav {
   margin: 0 !important;
 }
 
-
-.contact-nav{
+.contact-nav {
   font-family: $body-font;
-  background-color: #DC4343;
+  background-color: #dc4343;
   border-radius: 3.125em;
   min-width: 6.375em;
   color: white !important;
   padding: 0.4em 1.5em !important;
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .navbar-tuf {
     padding-right: 1em !important;
   }
@@ -54,18 +50,18 @@
     width: 200px;
   }
   #paypal-link,
- .nav li.nav-item {
-    margin: .5em 0;
+  .nav li.nav-item {
+    margin: 0.5em 0;
   }
-  #paypal-link{
+  #paypal-link {
     margin-right: 1.7em !important;
   }
 
-  .no-decoration{
+  .no-decoration {
     margin-right: 0.8em !important;
   }
 
-  .contact-nav{
+  .contact-nav {
     max-width: fit-content;
     display: inline-flex;
   }
@@ -77,7 +73,7 @@
     font-size: 1.1em;
   }
   #paypal-link,
-  .no-decoration{
+  .no-decoration {
     align-items: initial;
     margin-right: 2em !important;
     text-align: left;
@@ -92,11 +88,11 @@
   display: inline-block;
   margin: 4px 10px;
   cursor: pointer;
-  color:  rgba(0, 0, 0, 0.5) !important;
+  color: rgba(0, 0, 0, 0.5) !important;
   border: none !important;
   background-color: transparent !important;
 }
 
 #paypal-link:focus {
-      outline: none;
+  outline: none;
 }
