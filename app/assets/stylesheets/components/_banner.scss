@@ -36,8 +36,6 @@ a.btn-banner:hover {
   color: white;
 }
 
-
-
 @include for-tablet-portrait-down {
   .jumbotron {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
