@@ -51,6 +51,21 @@
 
 
 @media (max-width: $breakpoint-burger-menu) {
+  .navbar {
+    .navbar-toggler {
+      font-size: 0.8em;
+    }
+
+    .img-fluid {
+      width: 50%;
+
+      .logo-img {
+        width: 100%;
+      }
+    }
+
+  }
+
   .navbar-nav {
     align-items: flex-end;
 
@@ -58,6 +73,8 @@
     a {
       width: 100%;
     }
+
+    
   }
 }
 
