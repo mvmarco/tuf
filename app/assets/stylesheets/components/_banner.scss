@@ -1,24 +1,25 @@
 .jumbotron {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("new_banner.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("new_banner.jpg");
   background-size: cover;
   background-position: center;
 }
 
-.jumbotron h1{
+.jumbotron h1 {
   margin-top: 2em;
   font-size: 3.5rem;
   font-weight: 700;
   font-family: $headers-font;
 }
 
-.jumbotron p{
-  font-size: 1.250em;
+.jumbotron p {
+  font-size: 1.25em;
   font-weight: 400;
   font-family: $body-font;
 }
 
-.btn-banner{
-  background-color: #DC4343;
+.btn-banner {
+  background-color: #dc4343;
   min-width: 9.375em;
   color: white;
   font-family: $body-font;
@@ -29,19 +30,62 @@
   margin-right: 3em;
 }
 
-a.btn-banner:hover{
+a.btn-banner:hover {
   background-color: #c93232;
   text-decoration: none !important;
   color: white;
 }
 
+@include for-tablet-portrait-down {
+  .jumbotron {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("new_banner_tablet.jpg");
+    background-position: inherit;
+    background-size: cover;
 
-@media (max-width: 575.98px){
-  .jumbotron{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("new_banner_small.jpg");
+    padding: 0;
+    height: 70vh;
+
+    .container-fluid {
+      height: 100%;
+
+      .content-banner {
+        height: 100%;
+        align-items: flex-end;
+
+        .banner-title {
+          margin-bottom: 60px;
+        }
+      }
+      h1 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 684px) {
+      .container-fluid {
+        h1 {
+          font-size: 2.6rem;
+        }
+
+        p {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+
+@include for-phone-only {
+  .jumbotron {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("new_banner_small.jpg");
     margin: 0 !important;
     padding: 0 !important;
-    background-position:left;
+    background-position: left;
     height: 80vh;
   }
   .content-banner {
@@ -49,7 +93,7 @@ a.btn-banner:hover{
     align-items: flex-end;
     margin-top: 17em;
   }
-  .jumbotron h1{
+  .jumbotron h1 {
     margin-left: 5em;
     color: white;
     display: flex;
@@ -58,14 +102,14 @@ a.btn-banner:hover{
     font-weight: 700;
   }
 
-  .jumbotron p{
+  .jumbotron p {
     margin-left: 8.5em;
     font-size: 1em;
     text-align: start;
     font-weight: 600;
   }
 
-  .btn-banner{
+  .btn-banner {
     min-width: 4.25em;
     font-size: 1em;
     margin-left: 11em;
@@ -75,17 +119,17 @@ a.btn-banner:hover{
 }
 
 @media (max-width: 425px) {
-  .jumbotron h1{
-    margin-left: .5em;
+  .jumbotron h1 {
+    margin-left: 0.5em;
   }
   .jumbotron p {
-    margin-left: .5em;
+    margin-left: 0.5em;
   }
-  .content-banner{
+  .content-banner {
     margin-top: 13em;
   }
 
-  .btn-banner{
+  .btn-banner {
     margin-left: 4em;
   }
 }

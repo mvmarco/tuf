@@ -49,8 +49,21 @@
   padding: 0.4em 1.5em !important;
 }
 
-
 @media (max-width: $breakpoint-burger-menu) {
+  .navbar {
+    .navbar-toggler {
+      font-size: 0.8em;
+    }
+
+    .img-fluid {
+      width: 50%;
+
+      .logo-img {
+        width: 100%;
+      }
+    }
+  }
+
   .navbar-nav {
     align-items: flex-end;
 
