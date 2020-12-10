@@ -6,3 +6,9 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+@include for-phone-only {
+  .hidden-mobile {
+    display: none;
+  }
+}
