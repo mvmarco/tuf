@@ -1,13 +1,14 @@
 <div class="navbar navbar-expand-lg navbar-light navbar-tuf">
   <%= link_to root_path, class: "navbar-brand img-fluid" do %>
-  <%= image_tag "tuf.png", class: "logo-img" %>
+  <div class="mobile-logo"></div>
+  <%= image_tag "tuf.png", class: "logo-img hidden-mobile" %>
   <% end %>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
-  </button>
+  </button> 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto navbar-nav ml-lg-auto">
+    <ul class="navbar-nav mr-auto bg-white ml-lg-auto">
       <li class="nav-item no-decoration">
         <form class="" action="https://www.paypal.com/donate" method="post" target="_top">
           <input type="hidden" name="hosted_button_id" value="S428H9T5S2PXS" />

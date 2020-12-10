@@ -3,20 +3,21 @@
     url("new_banner.jpg");
   background-size: cover;
   background-position: center;
+
+  h1 {
+    margin-top: 2em;
+    font-size: 3.5rem;
+    font-weight: 700;
+    font-family: $headers-font;
+  }
+
+  p {
+    font-size: 1.25em;
+    font-weight: 400;
+    font-family: $body-font;
+  }
 }
 
-.jumbotron h1 {
-  margin-top: 2em;
-  font-size: 3.5rem;
-  font-weight: 700;
-  font-family: $headers-font;
-}
-
-.jumbotron p {
-  font-size: 1.25em;
-  font-weight: 400;
-  font-family: $body-font;
-}
 
 .btn-banner {
   background-color: #dc4343;
@@ -40,11 +41,11 @@ a.btn-banner:hover {
   .jumbotron {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
       url("new_banner_tablet.jpg");
-    background-position: inherit;
+    background-position: initial;
     background-size: cover;
 
     padding: 0;
-    height: 70vh;
+    height: 700px;
 
     .container-fluid {
       height: 100%;
@@ -82,54 +83,62 @@ a.btn-banner:hover {
 @include for-phone-only {
   .jumbotron {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url("new_banner_small.jpg");
-    margin: 0 !important;
-    padding: 0 !important;
-    background-position: left;
-    height: 80vh;
+      url("new_banner_mobile.jpg");
+      background-size: cover;
+    height: 500px;
+
   }
   .content-banner {
     float: right;
     align-items: flex-end;
-    margin-top: 17em;
-  }
-  .jumbotron h1 {
-    margin-left: 5em;
-    color: white;
-    display: flex;
-    alignment-baseline: bottom;
-    font-size: 1.7em;
-    font-weight: 700;
   }
 
-  .jumbotron p {
-    margin-left: 8.5em;
-    font-size: 1em;
-    text-align: start;
-    font-weight: 600;
-  }
+  .banner-title {
+    margin: 0;
+    width: 65%;
+    height: 30%;
+    padding: 0 20px;
+    margin-bottom: 0 !important;
+    background: white;
+    // background: #e6e6e6;
+    box-shadow: -3px -10px 15px rgba(0,0,0,0.1);
 
-  .btn-banner {
-    min-width: 4.25em;
-    font-size: 1em;
-    margin-left: 11em;
-    margin-right: 0.625em;
-    margin-bottom: 0.825em;
-  }
-}
+    &:before {
+      content: "";
+      display: block;
+      margin-left: -20px;
+      width: 50%;
+      border-top: 6px solid $red;
+    }
 
-@media (max-width: 425px) {
-  .jumbotron h1 {
-    margin-left: 0.5em;
-  }
-  .jumbotron p {
-    margin-left: 0.5em;
-  }
-  .content-banner {
-    margin-top: 13em;
-  }
+    h1 {
+      color: black;
+      font-size: 1.7rem !important;
+        font-weight: 700;
+        margin-top: 10px;
+    }
 
-  .btn-banner {
-    margin-left: 4em;
+    .logo-mobile {
+      background-image: url("mobile-tuf.png");;
+      background-size: cover;
+      width: 150px;
+      height: 50px;
+    }
+
+    @media(max-width: 433px) {
+      .jumbotron {
+        height: 70vh;
+        background-position: center;
+      }
+
+      h1 {
+        font-size: 1.1rem !important;
+      }
+
+      .logo-mobile {
+        width: 130px;
+        height: 40px;
+      }
+    }
   }
 }
