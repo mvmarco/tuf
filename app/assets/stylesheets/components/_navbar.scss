@@ -59,7 +59,7 @@
       width: 50%;
 
       .logo-img {
-        width: 100%;
+        width: 70%;
       }
     }
   }
@@ -111,7 +111,35 @@
   }
 }
 
+@include for-phone-only {
+  .navbar {
+    height: 10vh;
+    padding: 0 16px;
+    justify-content: flex-end;
+
+    .img-fluid {
+      width: 50%;
+      margin: 0;
+      padding-top: 0;
+
+      .mobile-logo {
+        background-image: url("smalltuf.png");
+        background-size: cover;
+        width: 55px;
+        height: 50px;
+      }
+    }
+
+    @media (max-width: 433px) {
+      .img-fluid {
+        width: 45%;
+      }
+    }
+  }
+}
+
 @media (max-width: 411px) {
+
   #paypal-link,
   .nav-item {
     font-size: 1.1em;
