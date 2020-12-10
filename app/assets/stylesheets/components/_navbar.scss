@@ -65,7 +65,7 @@
   .navbar {
     .navbar-toggler {
       font-size: 0.8em;
-      margin-right: 20px;
+      margin-right: 30px;
     }
 
     .img-fluid {
@@ -87,14 +87,10 @@
 }
 
 @media (max-width: 768px) {
-  .navbar-tuf {
-    // padding-right: 1em !important;
-
-  }
   
   .navbar-nav {
     .nav-item {
-      width: 60%;
+      width: 40%;
 
       .nav-link {
         text-align: right;
@@ -137,6 +133,10 @@
         width: 55px;
         height: 50px;
       }
+    }
+
+    .navbar-toggler {
+      margin-right: 20px;
     }
 
     @media (max-width: 433px) {
