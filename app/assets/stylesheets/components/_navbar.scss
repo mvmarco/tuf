@@ -1,19 +1,30 @@
 .navbar-tuf {
   justify-content: space-between;
   background: white;
-}
+  height: 100px;
+  padding: 8px 0;
 
-.navbar-tuf .navbar-collapse {
-  flex-grow: 0;
-}
+  .img-fluid {
+    width: 450px;
+    .logo-img {
+      width: 300px;
+    }
+  }
 
-.navbar-tuf .navbar-brand img {
-  width: 380px;
-}
+  .navbar-collapse {
+    flex-grow: 0;
+  }
 
-.navbar-nav {
-  li {
-    margin: auto 10px;
+  .navbar-brand img {
+    width: 380px;
+  }
+
+  .navbar-nav {
+    font-size: 0.7rem;
+
+    li {
+      margin: auto 10px;
+    }
   }
 }
 
@@ -47,19 +58,20 @@
   min-width: 6.375em;
   color: white !important;
   padding: 0.4em 1.5em !important;
+  margin: auto;
 }
 
 @media (max-width: $breakpoint-burger-menu) {
   .navbar {
     .navbar-toggler {
       font-size: 0.8em;
+      margin-right: 20px;
     }
 
     .img-fluid {
-      width: 50%;
-
+      margin-left: 16px;
       .logo-img {
-        width: 70%;
+        width: 55%;
       }
     }
   }
@@ -76,12 +88,10 @@
 
 @media (max-width: 768px) {
   .navbar-tuf {
-    padding-right: 1em !important;
-  }
-  .navbar-tuf .navbar-brand img {
-    width: 200px;
-  }
+    // padding-right: 1em !important;
 
+  }
+  
   .navbar-nav {
     .nav-item {
       width: 60%;
@@ -114,11 +124,10 @@
 @include for-phone-only {
   .navbar {
     height: 10vh;
-    padding: 0 16px;
     justify-content: flex-end;
 
     .img-fluid {
-      width: 50%;
+      width: 45%;
       margin: 0;
       padding-top: 0;
 
@@ -132,26 +141,9 @@
 
     @media (max-width: 433px) {
       .img-fluid {
-        width: 45%;
+        width: 40%;
       }
     }
-  }
-}
-
-@media (max-width: 411px) {
-
-  #paypal-link,
-  .nav-item {
-    font-size: 1.1em;
-    margin-right: 0;
-  }
-
-  #paypal-link,
-  .no-decoration {
-    align-items: initial;
-    margin-right: 2em !important;
-    text-align: left;
-    margin: 0 !important;
   }
 }
 
