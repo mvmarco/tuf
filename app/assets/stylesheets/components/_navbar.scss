@@ -4,6 +4,10 @@
   height: 100px;
   padding: 8px 0;
 
+  .navbar-collapse {
+    flex-grow: 0;
+  }
+
   .img-fluid {
     width: 450px;
     .logo-img {
@@ -11,9 +15,6 @@
     }
   }
 
-  .navbar-collapse {
-    flex-grow: 0;
-  }
 
   .navbar-brand img {
     width: 380px;
@@ -67,6 +68,12 @@
       font-size: 0.8em;
       margin-right: 30px;
     }
+  
+    .navbar-collapse {
+      flex-grow: 0;
+      background: white;
+
+    }
 
     .img-fluid {
       margin-left: 16px;
@@ -119,7 +126,7 @@
 
 @include for-phone-only {
   .navbar {
-    height: 10vh;
+    height: 70px;
     justify-content: flex-end;
 
     .img-fluid {
