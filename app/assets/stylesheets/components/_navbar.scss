@@ -4,15 +4,15 @@
   height: 100px;
   padding: 8px 0;
 
+  .navbar-collapse {
+    flex-grow: 0;
+  }
+
   .img-fluid {
     width: 450px;
     .logo-img {
       width: 300px;
     }
-  }
-
-  .navbar-collapse {
-    flex-grow: 0;
   }
 
   .navbar-brand img {
@@ -68,6 +68,25 @@
       margin-right: 30px;
     }
 
+    .navbar-collapse {
+      flex-grow: 0;
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+      margin-top: 4px;
+      padding-right: 30px;
+
+      ul {
+        margin-bottom: 5px;
+
+        .nav-item {
+          margin: 6px 0;
+
+          a {
+            color: white;
+          }
+        }
+      }
+    }
+
     .img-fluid {
       margin-left: 16px;
       .logo-img {
@@ -84,10 +103,13 @@
       width: 100%;
     }
   }
+
+  #paypal-link {
+    color: white !important;
+  }
 }
 
 @media (max-width: 768px) {
-  
   .navbar-nav {
     .nav-item {
       width: 40%;
@@ -98,19 +120,6 @@
     }
   }
 
-  #paypal-link,
-  .nav li.nav-item {
-    margin: 0.5em 0;
-  }
-
-  #paypal-link {
-    margin-right: 1.7em !important;
-  }
-
-  .no-decoration {
-    margin-right: 0.8em !important;
-  }
-
   .contact-nav {
     max-width: fit-content;
     display: inline-flex;
@@ -119,7 +128,7 @@
 
 @include for-phone-only {
   .navbar {
-    height: 10vh;
+    height: 70px;
     justify-content: flex-end;
 
     .img-fluid {
@@ -139,6 +148,11 @@
       margin-right: 20px;
     }
 
+    .navbar-collapse {
+      padding-right: 20px;
+      margin-top: 6px;
+    }
+
     @media (max-width: 433px) {
       .img-fluid {
         width: 40%;
@@ -154,7 +168,7 @@
   display: inline-block;
   margin: 4px 10px;
   cursor: pointer;
-  color: rgba(0, 0, 0, 0.5) !important;
+  color: rgba(0, 0, 0, 0.5);
   border: none !important;
   background-color: transparent !important;
 }
