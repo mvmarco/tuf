@@ -1,5 +1,8 @@
 $breakpoint-burger-menu: 991px;
 
+@mixin for-phone-md {
+  @media(max-width: 433px) { @content;}
+}
 @mixin for-phone-only {
   @media (max-width: 599px) { @content; }
 }
