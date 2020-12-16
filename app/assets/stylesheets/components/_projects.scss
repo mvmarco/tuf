@@ -75,9 +75,19 @@ hr {
       text-align: center;
     }
 
+    .project-img-right,
+    .project-img-left {
+      height: 200px;
+    }
+
     .projects-text-left,
     .projects-text-right {
       min-width: 250px;
+      font-size: 0.9rem;
+    }
+
+    .btn-projects {
+      font-size: 0.8em;
     }
   }
 }
@@ -110,4 +120,3 @@ hr {
 //     margin-right: 4.5em !important;
 //   }
 // }
-
