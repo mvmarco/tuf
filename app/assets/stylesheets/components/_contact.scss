@@ -9,16 +9,14 @@
 
 .btn-contact-form{
   background-color: #DC4343;
-  min-width: 9.375em;
-  color: white;
+  min-width: 6.375em;
+  color: white; 
   font-family: $body-font;
   font-weight: 400;
   font-size: 1em;
-  padding: 1em 2.25em;
+  padding: 0.6em 1.5em !important;
   border-radius: 3.125em;
-  margin-right: 3em;
-  border: 2px solid #DC4343;
-
+  border: 2px solid;
 }
 
 .btn-contact-form:hover,
