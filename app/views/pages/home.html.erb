@@ -5,12 +5,12 @@
     <div class="row justify-content-end content-banner">
       <div class="banner-title col-lg-5 col-sm-8">
         <h1 class="display-4">Long-term support for lasting change</h1>
-        <div class="logo-mobile"></div>
+        <!-- <div class="logo-mobile"></div> -->
         <p class="lead hidden-mobile">
           Treating better futures for those in need. Our work is focused on
           breaking the cycle of intergenerational poverty
         </p>
-        <div class="banner-link hidden-mobile row justify-content-end">
+        <div class="banner-link row justify-content-end">
           <%= link_to "Partner with us", "#linkone", class:
           "text-decoration-none btn-banner" %>
         </div>
@@ -79,14 +79,14 @@
 </div>
 
 <div class="container-fluid p-5 projects">
-  <div class="row pb-5 mb-3">
+  <div class="project-container row pb-5 mb-3">
     <div
-      class="col-lg-7 col-md-6 col-sm-12 order-sm-1 order-2"
+      class="col-lg-7 col-md-6 col-sm-12 order-md-1 order-2"
       data-aos="slide-right"
       data-aos-duration="1200"
     >
       <h3 class="projects-title-left">Senior Care Project</h3>
-      <p class="text-justify projects-left-text">
+      <p class="text-justify projects-text-left">
         With increasing economic pressures and shifting family roles,
         traditional ways of caring for the elderly have become difficult to
         maintain, leaving many senior citizens without a support network. Our
@@ -107,8 +107,10 @@
       <%= image_tag "sc.png", class: "img project-img-left" %>
     </div>
   </div>
+
   <hr />
-  <div class="row pb-5 mb-3">
+
+  <div class="project-container row pb-5 mb-3">
     <div
       class="col-lg-5 col-md-6 col-sm-12 order-1"
       data-aos="slide-left"
@@ -117,12 +119,12 @@
       <%= image_tag "l4l.png", class: "img project-img-right" %>
     </div>
     <div
-      class="col-lg-7 col-md-6 col-sm-12 order-sm-1 order-2"
+      class="projects-info-left col-lg-7 col-md-6 col-sm-12 order-md-1 order-2"
       data-aos="slide-left"
       data-aos-duration="1200"
     >
       <h3 class="projects-title-right">Learning 4 Life</h3>
-      <p class="text-justify project-text-right">
+      <p class="text-justify projects-text-right">
         is an Afterschool Project providing students the opportunity to continue
         their school day in a safe space with adult supervision. Education is
         the foundation of success, but many children in South Africa do not
@@ -134,15 +136,17 @@
       class: "btn-projects text-decoration-none" %>
     </div>
   </div>
+
   <hr />
-  <div class="row pb-5 mb-3">
+
+  <div class="project-container row pb-5 mb-3">
     <div
-      class="col-lg-7 col-md-6 col-sm-12 order-sm-1 order-2"
+      class="col-lg-7 col-md-6 col-sm-12 order-md-1 order-2"
       data-aos="slide-right"
       data-aos-duration="1200"
     >
       <h3 class="projects-title-left">TUF Alumni</h3>
-      <p class="text-justify projects-left-text">
+      <p class="text-justify projects-text-left">
         In 2018 we formed an Alumni group from our ex-L4L matriculants and
         established a board to lead the longer-term engagement in social action
         and to maintain a mentoring relationship with these students.
@@ -158,8 +162,10 @@
       <%= image_tag "ta.png", class: "img project-img-left" %>
     </div>
   </div>
+
   <hr />
-  <div class="row pb-5 mb-3">
+
+  <div class="project-container row pb-5 mb-3">
     <div
       class="col-lg-5 col-md-6 col-sm-12 order-1"
       data-aos="slide-left"
@@ -168,12 +174,12 @@
       <%= image_tag "itc.png", class: "img project-img-right" %>
     </div>
     <div
-      class="col-lg-7 col-md-6 col-sm-12 order-sm-1 order-2"
+      class="project-info-left col-lg-7 col-md-6 col-sm-12 order-md-1 order-2"
       data-aos="slide-left"
       data-aos-duration="1200"
     >
       <h3 class="projects-title-right">Itc Hub</h3>
-      <p class="text-justify project-text-right">
+      <p class="text-justify projects-text-right">
         Collaborative learning and skills development is core to this project -
         mitigation and innovation within the information and communications
         technology primarily directed at youth social and skills development.
@@ -184,14 +190,14 @@
   </div>
 
   <hr />
-  <div class="row pb-0 mb-3">
+  <div class="project-container row pb-0 mb-3">
     <div
-      class="col-lg-7 col-md-6 col-sm-12 order-sm-1 order-2"
+      class="col-lg-7 col-md-6 col-sm-12 order-md-1 order-2"
       data-aos="slide-right"
       data-aos-duration="1200"
     >
       <h3 class="projects-title-left">Komani - A social enterprise project</h3>
-      <p class="text-justify projects-left-text">
+      <p class="text-justify projects-text-left">
         Safeguarding the dignity and life opportunities of women through the
         manufacturing and sales of reusable sanitary pads.
       </p>
@@ -234,7 +240,9 @@
   </div>
 </div>
 
-<div class="container-fluid p-5 our-vision">
+<!--  Connect / Our Vision -->
+
+<div class="our-vision container-fluid p-5">
   <div class="row">
     <div class="col-lg-6 col-md-6 col-sm-12">
       <h2 class="text-center our-vision mb-3">Our Vision</h2>
@@ -248,35 +256,37 @@
         help manifest human dignity in the here and now.
       </p>
     </div>
-    <div class="col-lg-6 col-md-6 col-sm-12 pr-2">
+    <div class="connect-us col-lg-6 col-md-6 col-sm-12">
       <h2 class="text-center our-vision mb-4">Connect with us</h2>
-      <div class="d-flex mb-3">
-        <span
-          ><i class="fas fa-map-marked-alt p-3 mb-4 mr-1 our-vision"></i>&nbsp
-          &nbsp</span
-        >
-        <span
-          ><p>
+      <div class="connect-item d-flex">
+        <span>
+          <i class="connect-icon fas fa-map-marked-alt p-3 our-vision"></i>
+          <!-- &nbsp &nbsp  -->
+        </span>
+        <span>
+          <p>
             Unit 1, 17 Lood Street, Brackenfell Industrial,<br />
             Cape Town, 7560, South Africa
-          </p></span
-        >
+          </p>
+        </span>
       </div>
-      <div class="d-flex mb-3">
-        <span
-          ><i class="fas fa-phone-alt p-3 mb-4 our-vision"></i>&nbsp &nbsp</span
-        >
-        <span
-          ><p>
-            Phone: +27 81 3355438 <br />A.J. Lamour Founding Director
-          </p></span
-        >
+      <div class="connect-item d-flex">
+        <span>
+          <i class="connect-icon fas fa-phone-alt p-3 our-vision"></i>
+          <!-- &nbsp &nbsp -->
+        </span>
+        <span>
+          <p>Phone: +27 81 3355438 <br />A.J. Lamour Founding Director</p>
+        </span>
       </div>
-      <div class="d-flex">
-        <span
-          ><i class="fas fa-envelope p-3 mb-4 our-vision"></i>&nbsp &nbsp</span
-        >
-        <span class="mt-1"><p>tuf@example.com</p></span>
+      <div class="connect-item d-flex">
+        <span>
+          <i class="connect-icon fas fa-envelope p-3 our-vision"></i>
+          <!-- &nbsp &nbsp -->
+        </span>
+        <span class="mt-1">
+          <p>tuf@example.com</p>
+        </span>
       </div>
     </div>
   </div>

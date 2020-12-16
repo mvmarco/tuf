@@ -1,24 +1,50 @@
-.our-vision{
-  color: #DC4343;
+.our-vision {
+  color: #dc4343;
   background-color: white;
 }
 
-.our-vision h2{
+.our-vision h2 {
   font-weight: 700;
   font-family: $headers-font;
   text-transform: uppercase;
 }
-.our-vision p{
+.our-vision p {
   line-height: 1.5em;
   font-size: 1.2rem;
   font-family: $body-font;
 }
 .fa-envelope,
 .fa-map-marked-alt,
-.fa-phone-alt{
+.fa-phone-alt {
   font-size: 1.2em;
-  background-color: #DC4343;
+  background-color: #dc4343;
   color: white;
   border-radius: 50%;
+}
 
+.connect-us {
+  .connect-icon {
+    margin-right: 15px;
+  }
+
+  .connect-item {
+    align-items: center;
+    margin: 40px 0;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@include for-phone-md {
+  .our-vision,
+  .connect-us {
+    h2 {
+      font-size: 1.8rem;
+    }
+    p {
+      font-size: 0.9rem;
+    }
+  }
 }

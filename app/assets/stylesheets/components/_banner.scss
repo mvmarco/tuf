@@ -18,17 +18,16 @@
   }
 }
 
-
 .btn-banner {
   background-color: #dc4343;
-  min-width: 9.375em;
+  min-width: 6.375em;
   color: white;
   font-family: $body-font;
   font-weight: 400;
   font-size: 1.1em;
-  padding: 1em 2.25em;
   border-radius: 3.125em;
   margin-right: 3em;
+  padding: 0.6em 1.5em !important;
 }
 
 a.btn-banner:hover {
@@ -84,9 +83,8 @@ a.btn-banner:hover {
   .jumbotron {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
       url("new_banner_mobile.jpg");
-      background-size: cover;
+    background-size: cover;
     height: 500px;
-
   }
   .content-banner {
     float: right;
@@ -100,8 +98,7 @@ a.btn-banner:hover {
     padding: 0 20px;
     margin-bottom: 0 !important;
     background: white;
-    // background: #e6e6e6;
-    box-shadow: -3px -10px 15px rgba(0,0,0,0.1);
+    box-shadow: -3px -10px 15px rgba(0, 0, 0, 0.1);
 
     &:before {
       content: "";
@@ -114,18 +111,22 @@ a.btn-banner:hover {
     h1 {
       color: black;
       font-size: 1.7rem !important;
-        font-weight: 700;
-        margin-top: 10px;
+      font-weight: 700;
+      margin-top: 10px;
     }
 
-    .logo-mobile {
-      background-image: url("mobile-tuf.png");;
-      background-size: cover;
-      width: 150px;
-      height: 50px;
+    .banner-link {
+      margin: 0;
+      .btn-banner {
+        margin: 0;
+        font-size: 1em;
+        border: 1px solid #dc4343;
+        background-color: rgba(220, 69, 67, 0.2);
+        color: black;
+      }
     }
 
-    @media(max-width: 433px) {
+    @media (max-width: 433px) {
       .jumbotron {
         height: 70vh;
         background-position: center;
@@ -135,9 +136,9 @@ a.btn-banner:hover {
         font-size: 1.1rem !important;
       }
 
-      .logo-mobile {
-        width: 130px;
-        height: 40px;
+      .banner-link {
+        font-size: 0.8em;
+        margin-top: 40px;
       }
     }
   }

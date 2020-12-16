@@ -28,9 +28,15 @@
   }
 }
 
-#paypal-link,
+#paypal-link {
+  margin: 0 !important;
+  padding-right: 0;
+  &:hover {
+    color: rgba(0, 0, 0, 0.7);
+  }
+}
 .nav-item {
-  font-size: 1.3em;
+  font-size: 1.2em;
   text-align: left;
   font-family: $body-font;
   text-align: right;
@@ -47,18 +53,19 @@
   padding: 0 !important;
 }
 
-.btn-nav {
-  margin: 0 !important;
-}
-
 .contact-nav {
   font-family: $body-font;
   background-color: #dc4343;
   border-radius: 3.125em;
   min-width: 6.375em;
   color: white !important;
-  padding: 0.4em 1.5em !important;
+  padding: 0.6em 1.5em !important;
   margin: auto;
+  font-size: 1.2em;
+
+  &:hover {
+    background-color: #c93232;
+  }
 }
 
 @media (max-width: $breakpoint-burger-menu) {
@@ -76,9 +83,15 @@
 
       ul {
         margin-bottom: 5px;
+        align-items: flex-start;
+        margin-left: 16px;
 
         .nav-item {
           margin: 6px 0;
+
+          #paypal-link {
+            padding-left: 0px;
+          }
 
           a {
             color: white;
@@ -95,15 +108,6 @@
     }
   }
 
-  .navbar-nav {
-    align-items: flex-end;
-
-    button,
-    a {
-      width: 100%;
-    }
-  }
-
   #paypal-link {
     color: white !important;
   }
@@ -112,11 +116,8 @@
 @media (max-width: 768px) {
   .navbar-nav {
     .nav-item {
-      width: 40%;
-
-      .nav-link {
-        text-align: right;
-      }
+      width: 50%;
+      text-align: left;
     }
   }
 
@@ -130,6 +131,10 @@
   .navbar {
     height: 70px;
     justify-content: flex-end;
+
+    .nav-item {
+      width: 60%;
+    }
 
     .img-fluid {
       width: 45%;
