@@ -26,12 +26,28 @@ hr {
 }
 /****End Typography*****/
 
-.projects img {
+.projects {
+  img {
   width: auto;
   height: 250px;
   border-radius: 0.3125em;
-  float: right;
-  margin-right: 3em;
+  }
+
+  .project-img-left {
+    float: right;
+  }
+}
+
+.project-container {
+  padding: 0 100px;
+}
+
+.btn-learn-more-right {
+  margin-top: 50px;
+}
+
+.btn-learn-more-left {
+  margin-top: 50px;
 }
 
 .btn-projects {
@@ -51,11 +67,17 @@ hr {
   color: #dc4343;
 }
 
+@media (max-width: 992px) {
+  .project-container {
+    padding: 0;
+  }
+}
+
 @media (max-width: 768px) {
   .project-container {
     padding: 0 30px;
 
-    img {
+    img, .project-img-left {
       float: none;
       margin: 0 0 30px 0;
     }
@@ -65,6 +87,12 @@ hr {
   .projects-text-right {
     margin-bottom: 30px;
   }
+
+  // .btn-learn-more-right,
+  // .btn-learn-more-left {
+  //   margin-top: 0;
+  //   text-align: left;
+  // }
 }
 
 @include for-phone-only {
