@@ -1,19 +1,20 @@
-.footer-tuf{
-  background-color: #DC4343;
+.footer-tuf {
+  background-color: #dc4343;
+  padding: 20px 5px 0 5px;
 }
 
-.footer-tuf h2{
+.footer-tuf h2 {
   font-family: $headers-font;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.footer-tuf a{
+.footer-tuf a {
   color: white;
   text-decoration: none;
 }
 
-.image-footer{
+.image-footer {
   border-radius: 50%;
   width: 130px;
   height: 130px;
@@ -23,46 +24,43 @@
 .fa-facebook,
 .fa-linkedin,
 .fa-twitter,
-.fa-youtube{
+.fa-youtube {
   font-size: 1.5em;
-  background-color:white;
-  color: #DC4343;
+  background-color: white;
+  color: #dc4343;
   border-radius: 50%;
 }
 
 .fa-facebook:hover,
 .fa-linkedin:hover,
 .fa-twitter:hover,
-.fa-youtube:hover{
-  background-color:white;
+.fa-youtube:hover {
+  background-color: white;
   color: #c93232;
   cursor: pointer;
 }
 
-.copyright{
+.copyright {
   font-size: 1.175em;
 }
 
-@media (max-width: 675px){
-  .image-footer{
+@media (max-width: 675px) {
+  .image-footer {
     margin-left: 1em;
     width: 90px;
     height: 90px;
-    margin-right: 0!important;
+    margin-right: 0 !important;
   }
   .fa-facebook,
   .fa-linkedin,
   .fa-twitter,
-  .fa-youtube{
+  .fa-youtube {
     font-size: 1.2em;
     margin-top: 0.5em !important;
   }
 }
 
 @media (max-width: 411px) {
-  .footer-tuf {
-    padding-top: 2rem !important;
-  }
   .footer-tuf h2 {
     font-size: 1.1em;
   }
@@ -74,10 +72,10 @@
   .fa-linkedin,
   .fa-twitter,
   .fa-youtube {
-    font-size: .9em !important;
+    font-size: 0.9em !important;
     margin-top: 0.1em !important;
   }
-  .footer-tuf p{
+  .footer-tuf p {
     font-size: 0.8em;
   }
 }
@@ -87,7 +85,7 @@
   .fa-linkedin,
   .fa-twitter,
   .fa-youtube {
-    font-size: .8em !important;
+    font-size: 0.8em !important;
     margin-right: 1em !important;
   }
 }
