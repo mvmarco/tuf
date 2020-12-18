@@ -28,9 +28,9 @@ hr {
 
 .projects {
   img {
-  width: auto;
-  height: 250px;
-  border-radius: 0.3125em;
+    width: auto;
+    height: 250px;
+    border-radius: 0.3125em;
   }
 
   .project-img-left {
@@ -39,7 +39,8 @@ hr {
 }
 
 .project-container {
-  padding: 0 100px;
+  position: relative;
+  padding: 0 80px;
 }
 
 .btn-learn-more-right {
@@ -58,28 +59,41 @@ hr {
   font-family: $body-font;
   font-weight: 400;
   font-size: 1em;
-  padding: 1em 2.25em;
+  padding: 0.6em 1.5em !important;
   border-radius: 3.125em;
+  position: absolute;
+  bottom: 0;
 }
 
 .btn-projects:hover,
 .btn-projects:focus {
-  color: #dc4343;
+  color: black;
+  background-color: #e2e6ea;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1020px) {
   .project-container {
-    padding: 0;
+    // padding: 0 80px;
+
+    .project-img-right,
+    .project-img-left {
+      float: none;
+      margin-bottom: 30px;
+    }
   }
 }
 
 @media (max-width: 768px) {
   .project-container {
-    padding: 0 30px;
-
-    img, .project-img-left {
+    padding: 0 40px;
+    img,
+    .project-img-left {
       float: none;
       margin: 0 0 30px 0;
+    }
+
+    .btn-projects {
+      position: initial;
     }
   }
 
@@ -87,12 +101,6 @@ hr {
   .projects-text-right {
     margin-bottom: 30px;
   }
-
-  // .btn-learn-more-right,
-  // .btn-learn-more-left {
-  //   margin-top: 0;
-  //   text-align: left;
-  // }
 }
 
 @include for-phone-only {
@@ -114,8 +122,13 @@ hr {
       font-size: 0.9rem;
     }
 
-    .btn-projects {
-      font-size: 0.8em;
+    .btn-learn-more-right,
+    .btn-learn-more-left {
+      margin-top: 0;
+      
+      .btn-projects {
+        font-size: 0.8em;
+      }
     }
   }
 }
