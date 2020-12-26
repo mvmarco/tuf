@@ -20,46 +20,58 @@
 </div>
 
 <!-- About -->
-<div class="container-fluid p-5 mb-5 card-small">
-  <div class="row pl-5 pr-5">
-    <div class="col-12 col-lg-3 col-md-6 about">
-      <div class="card mb-4 p-2 h-100">
+<div class="about-container container-fluid mb-5 card-small">
+  <div class="row">
+    <div class="col-12 col-sm-6 col-lg-3 about">
+      <div class="card mb-4 p-2">
         <div class="card-body">
-          <h4 class="card-title text-center">Women Empowerment</h4>
-          <p class="card-text">
+          <h4 class="card-title text-center">
+            Women <br />
+            Empowerment
+          </h4>
+          <p class="card-text text-center">
             Empowering women and young girls to participate actively in the
             economy.
           </p>
         </div>
       </div>
     </div>
-    <div class="col-12 col-lg-3 col-md-6 about">
-      <div class="card mb-4 p-2 h-100">
+    <div class="col-12 col-sm-6 col-lg-3 about">
+      <div class="card mb-4 p-2">
         <div class="card-body">
-          <h4 class="card-title text-center">Skills Development.</h4>
-          <p class="card-text">
+          <h4 class="card-title text-center">
+            Skills <br />
+            Development
+          </h4>
+          <p class="card-text text-center">
             Activating innovative and life-changing initiatives to improving
             youth digital literacy skills.
           </p>
         </div>
       </div>
     </div>
-    <div class="col-12 col-lg-3 col-md-6 about">
-      <div class="card mb-4 p-2 h-100">
+    <div class="col-12 col-sm-6 col-lg-3 about">
+      <div class="card mb-4 p-2">
         <div class="card-body">
-          <h4 class="card-title text-center">Advancing Education</h4>
-          <p class="card-text">
+          <h4 class="card-title text-center">
+            Advancing <br />
+            Education
+          </h4>
+          <p class="card-text text-center">
             Developing communities to ignite the interest and curiosity of
             students and advance quality of life.
           </p>
         </div>
       </div>
     </div>
-    <div class="col-12 col-lg-3 col-md-6 about">
-      <div class="card mb-4 p-2 h-100">
+    <div class="col-12 col-sm-6 col-lg-3 about">
+      <div class="card mb-4 p-2">
         <div class="card-body">
-          <h4 class="card-title text-center">Community Health</h4>
-          <p class="card-text">
+          <h4 class="card-title text-center">
+            Community <br />
+            Health
+          </h4>
+          <p class="card-text text-center">
             Improving well-being and quality of life of elderly people in the
             community.
           </p>
@@ -70,6 +82,7 @@
 </div>
 
 <!-- Projects -->
+
 <div class="container-fluid p-3 projects">
   <div class="row">
     <div class="col-12 text-center mt-3 mb-3">
@@ -81,7 +94,14 @@
 <div class="container-fluid p-5 projects">
   <div class="project-container row pb-5 mb-3">
     <div
-      class="col-lg-7 col-md-6 col-sm-12 order-md-1 order-2"
+      class="col-lg-4 col-md-6 col-sm-12 order-1 order-lg-2"
+      data-aos="slide-right"
+      data-aos-duration="1200"
+    >
+      <%= image_tag "sc.png", class: "img project-img-left" %>
+    </div>
+    <div
+      class="col-lg-8 col-md-12 col-sm-12 order-md-1 order-2"
       data-aos="slide-right"
       data-aos-duration="1200"
     >
@@ -96,15 +116,10 @@
         relationships and gain unique insights into the lives of our senior
         citizens.
       </p>
-      <%= link_to "Learn more >>", "/documents/book.pdf", target: "_blank" ,
-      class: "btn-projects btn-left text-decoration-none" %>
-    </div>
-    <div
-      class="col-lg-5 col-md-6 col-sm-12 order-1"
-      data-aos="slide-right"
-      data-aos-duration="1200"
-    >
-      <%= image_tag "sc.png", class: "img project-img-left" %>
+      <div class="btn-learn-more-left">
+        <%= link_to "Learn more >>", "/documents/book.pdf", target: "_blank" ,
+        class: "btn-projects btn-left text-decoration-none" %>
+      </div>
     </div>
   </div>
 
@@ -112,14 +127,14 @@
 
   <div class="project-container row pb-5 mb-3">
     <div
-      class="col-lg-5 col-md-6 col-sm-12 order-1"
+      class="col-lg-4 col-md-6 col-sm-12 order-1"
       data-aos="slide-left"
       data-aos-duration="1200"
     >
       <%= image_tag "l4l.png", class: "img project-img-right" %>
     </div>
     <div
-      class="projects-info-left col-lg-7 col-md-6 col-sm-12 order-md-1 order-2"
+      class="projects-info-left col-lg-8 col-md-12 col-sm-12 order-md-1 order-2"
       data-aos="slide-left"
       data-aos-duration="1200"
     >
@@ -132,8 +147,10 @@
         in Brackenfell, Hermon and Struisbaai where provide care for
         approximately 135 students.
       </p>
-      <%= link_to "Learn more >>", "/documents/book.pdf", target: "_blank" ,
-      class: "btn-projects text-decoration-none" %>
+      <div class="btn-learn-more-right">
+        <%= link_to "Learn more >>", "/documents/book.pdf", target: "_blank" ,
+        class: "btn-projects text-decoration-none" %>
+      </div>
     </div>
   </div>
 
@@ -141,7 +158,14 @@
 
   <div class="project-container row pb-5 mb-3">
     <div
-      class="col-lg-7 col-md-6 col-sm-12 order-md-1 order-2"
+      class="col-lg-4 col-md-6 col-sm-12 order-1 order-lg-2"
+      data-aos="slide-right"
+      data-aos-duration="1200"
+    >
+      <%= image_tag "ta.png", class: "img project-img-left" %>
+    </div>
+    <div
+      class="col-lg-8 col-md-12 col-sm-12 order-md-1 order-2"
       data-aos="slide-right"
       data-aos-duration="1200"
     >
@@ -151,15 +175,10 @@
         established a board to lead the longer-term engagement in social action
         and to maintain a mentoring relationship with these students.
       </p>
-      <%= link_to "Learn more >>", "/documents/book.pdf", target: "_blank" ,
-      class: "btn-projects btn-left text-decoration-none" %>
-    </div>
-    <div
-      class="col-lg-5 col-md-6 col-sm-12 order-1"
-      data-aos="slide-right"
-      data-aos-duration="1200"
-    >
-      <%= image_tag "ta.png", class: "img project-img-left" %>
+      <div class="btn-learn-more-left">
+        <%= link_to "Learn more >>", "/documents/book.pdf", target: "_blank" ,
+        class: "btn-projects btn-left text-decoration-none" %>
+      </div>
     </div>
   </div>
 
@@ -167,14 +186,14 @@
 
   <div class="project-container row pb-5 mb-3">
     <div
-      class="col-lg-5 col-md-6 col-sm-12 order-1"
+      class="col-lg-4 col-md-6 col-sm-12 order-1"
       data-aos="slide-left"
       data-aos-duration="1200"
     >
       <%= image_tag "itc.png", class: "img project-img-right" %>
     </div>
     <div
-      class="project-info-left col-lg-7 col-md-6 col-sm-12 order-md-1 order-2"
+      class="project-info-left col-lg-8 col-md-12 col-sm-12 order-md-1 order-2"
       data-aos="slide-left"
       data-aos-duration="1200"
     >
@@ -184,15 +203,24 @@
         mitigation and innovation within the information and communications
         technology primarily directed at youth social and skills development.
       </p>
-      <%= link_to "Learn more >>", "/documents/book.pdf", target: "_blank" ,
-      class: "btn-projects text-decoration-none" %>
+      <div class="btn-learn-more-right">
+        <%= link_to "Learn more >>", "/documents/book.pdf", target: "_blank" ,
+        class: "btn-projects text-decoration-none" %>
+      </div>
     </div>
   </div>
 
   <hr />
   <div class="project-container row pb-0 mb-3">
     <div
-      class="col-lg-7 col-md-6 col-sm-12 order-md-1 order-2"
+      class="col-lg-4 col-md-6 col-sm-12 order-1 order-lg-2"
+      data-aos="slide-right"
+      data-aos-duration="1200"
+    >
+      <%= image_tag "k.png", class: "img project-img-left" %>
+    </div>
+    <div
+      class="col-lg-8 col-md-12 col-sm-12 order-md-1 order-2"
       data-aos="slide-right"
       data-aos-duration="1200"
     >
@@ -201,15 +229,11 @@
         Safeguarding the dignity and life opportunities of women through the
         manufacturing and sales of reusable sanitary pads.
       </p>
-      <%= link_to "Learn more >>", "/documents/book.pdf", target: "_blank" ,
-      class: "btn-projects btn-left text-decoration-none" %>
-    </div>
-    <div
-      class="col-lg-5 col-md-6 col-sm-12 order-1"
-      data-aos="slide-right"
-      data-aos-duration="1200"
-    >
-      <%= image_tag "k.png", class: "img project-img-left" %>
+
+      <div class="btn-learn-more-left">
+        <%= link_to "Learn more >>", "/documents/book.pdf", target: "_blank" ,
+        class: "btn-projects btn-left text-decoration-none" %>
+      </div>
     </div>
   </div>
 </div>

@@ -83,12 +83,12 @@
 
       ul {
         margin-bottom: 5px;
-        align-items: flex-start;
+        align-items: flex-end;
         margin-left: 16px;
 
         .nav-item {
           margin: 6px 0;
-
+          text-align: end;
           #paypal-link {
             padding-left: 0px;
           }
