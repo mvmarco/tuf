@@ -1,1 +1,1 @@
-Responsise website created for the Umtshayelo Foundation (TUF) with PayPal integration for donation.
+# Responsise website created with Ruby on Rails, for the Umtshayelo Foundation (TUF), with PayPal integration and email submission.
